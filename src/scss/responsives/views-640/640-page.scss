@@ -1,0 +1,120 @@
+body {
+    overflow-x: hidden;
+    .visible-640 {
+        display: block !important;
+    }
+
+    .hidden-640 {
+        display: none !important;
+    }
+
+    &.open-sidebar {
+        overflow: hidden;
+    }
+
+    &.open-detail {
+        overflow: hidden;
+    }
+}
+
+body.page-home {
+    .home-content {
+        margin-top: 60px;
+    }
+}
+
+body.page-policy-legal {
+    .policyholder-legal-content {
+        margin-top: 60px;
+    }
+}
+
+div.home-content__header {
+    padding: 0;
+    max-height: 255px;
+}
+
+div.home-content__header--control {
+    padding: 20px;
+    .home-content__header--control__left {
+        .home-content__header--control__left--status {
+            float: right;
+        }
+    }
+}
+
+div.home-content__header--info {
+    margin-top: 0;
+    .home-content__header--info__phone,
+    .home-content__header--info__email,
+    .home-content__header--info__address {
+        display: block;
+        margin: 0;
+        margin-top: 5px;
+    }
+}
+
+
+div.wrapper--tab {
+    margin-top: 14px;
+    .nav-tabs {
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        height: 55px;
+        > li {
+            float: none;
+            display: inline-block;
+            > a {
+                padding: 12px 20px;
+                height: 55px;
+                font-size: 14px;
+                line-height: 1.07;
+                letter-spacing: 0.3px;
+                span:first-child {
+                    &:after {
+                        content: '';
+                        display: block;
+                    }
+                }
+            }
+            &.error {
+                &:after {
+                    top: 5px;
+                    right: 5px;
+                }
+            }
+            &.li-attachment {
+                float: none;
+                position: relative;
+                right: 0;
+                top: -9px;
+                .btn-attachment .icon {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}
+
+h4.row-title {
+    margin: 45px -20px;
+    text-align: center;
+    &::before {
+        left: 0;
+    }
+    .text {
+        padding: 0 10px;
+    }
+}
+
+div.home-content__main {
+    padding: 0;
+}
+
+div.scroll-top {
+    display: inline-block;
+    padding: 20px 15px;
+    opacity: 0.3;
+    margin-top: 65px;
+}

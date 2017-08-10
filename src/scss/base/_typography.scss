@@ -1,0 +1,47 @@
+// ==========================================================================
+// Base Type
+// ==========================================================================
+
+$headers: 'h1, h2, h3, h4, h5, h6';
+$a-tags: 'a, a:visited';
+$a-tags-hover: 'a:active, a:hover';
+
+#{$headers} {
+  margin-top: 0px;
+}
+
+#{$a-tags} {
+  color: if(variable-exists(anchor-text-color), $anchor-text-color, '#222');
+}
+
+#{$a-tags-hover} {
+  color: if(variable-exists(anchor-text-hover-color), $anchor-text-hover-color, '#000');
+}
+
+/**
+ *
+ * Import plugin csss
+ *
+ */
+
+ul {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style-type: none;
+  }
+}
+
+
+a {
+  display: inline-block;
+  line-height: 1;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+  &:focus {
+    outline: 0;
+    text-decoration: none;
+  }
+}

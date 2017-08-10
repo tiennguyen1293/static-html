@@ -1,0 +1,25 @@
+{
+  "name": "crm-static",
+  "version": "0.0.1",
+  "authors": [
+    "tiennm"
+  ],
+  "description": "static-html",
+  "main": "",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "homepage": "tiennguyen1293@gmail.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.1",
+    "select2": "^4.0.3"
+  }
+}

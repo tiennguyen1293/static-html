@@ -1,0 +1,21 @@
+extends templates/layout
+
+
+//- Variables
+block append vars
+  - var lang                  = 'nl'
+  - var pageTitle             = 'CRM | Home page'
+  - var pageDescription       = 'home page'
+  - var bodyClass             = 'page page-home'
+
+
+
+
+
+block contentMain
+  div.header-wrapper
+    include templates/views/sections/header
+  div.content-wrapper
+    include templates/views/page/home/home-content
+  div.footer-wrapper
+    include templates/views/sections/footer

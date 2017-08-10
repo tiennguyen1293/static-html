@@ -1,0 +1,70 @@
+// ==========================================================================
+// Variables
+// ==========================================================================
+
+<%_.each(glyphs, function(glyph) { %>
+$icn-<%= glyph.fileName %>: "\<%= glyph.codePoint %>";<% }); %>
+
+
+
+
+
+// ==========================================================================
+// Map
+// ==========================================================================
+
+$icons: (<%_.each(glyphs, function(glyph) { %>
+  <%= glyph.fileName %>: "\<%= glyph.codePoint %>",<% }); %>
+);
+
+
+
+
+// ==========================================================================
+// Extends
+// ==========================================================================
+
+%<%= cssClass%>-base {
+  @extend %iconfont;
+  font-size: if(variable-exists(icn-font-size), $icn-font-size, 1em);
+  line-height: if(variable-exists(icn-line-height), $icn-line-height, 1);
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  speak: none;
+  display: inline-block;
+  text-rendering: auto;
+
+  // Better Font Rendering
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@function <%= cssClass%>-char($filename) {
+  @return map-get($icons, $filename);
+}
+
+.<%= cssClass%>{
+  display: inline-block;
+  &:before {
+    @extend %icn-base;
+  }
+}
+
+.<%= cssClass%>--fw {
+  width: if(variable-exists(icn-fixed-width-size), $icn-fixed-width-size, 1em);
+  text-align: center;
+}
+
+
+@mixin <%= cssClass%>($filename, $insert: before, $extend: true) {
+  &:#{$insert} {
+    content: <%= cssClass%>-char($filename);
+  }
+}
+
+<% _.each(glyphs, function(glyph) { %>.<%= cssClass%>--<%= glyph.fileName %> {
+  @include <%= cssClass%>(<%= glyph.fileName %>);
+}
+<% }); %>

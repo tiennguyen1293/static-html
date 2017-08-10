@@ -1,0 +1,48 @@
+{
+  "generator-robonkey": {
+    "environmentOption": "static",
+    "gulpDirOption": true,
+    "gulpCmdOption": false,
+    "gulpTypeOption": false,
+    "projectUrl": "mynewawesomeapp.localhost",
+    "projectName": "static-html",
+    "projectNameJson": "static-html",
+    "projectDescription": "static-html",
+    "projectVersion": "0.0.1",
+    "projectAuthor": "tiennm",
+    "authorEmail": "tiennguyen1293@gmail.com",
+    "projectLicense": "MIT",
+    "mainDir": "dist",
+    "assetsDir": "assets",
+    "cssDir": "styles",
+    "imgDir": "img",
+    "jsDir": "js",
+    "libDir": "lib",
+    "fontDir": "fonts",
+    "templateOption": "pug",
+    "baseStyleOption": "none",
+    "preproOption": "scss",
+    "mixinOption": "compassmixins",
+    "mqOption": "default",
+    "gridOption": "none",
+    "postcssOption": [
+      "cssnano",
+      "gradientfix",
+      "cssnext",
+      "cssgrace",
+      "classprefix",
+      "autoprefixer"
+    ],
+    "javascriptOption": "vanilla",
+    "scriptsOption": [
+      "jquery"
+    ],
+    "iconsType": "both",
+    "customIconfontOption": true,
+    "svgiconsOption": true,
+    "svgIconSpriteName": "icon-sprite",
+    "customIconfontName": "robonky-glyphs",
+    "rootFolder": "..",
+    "nodeModules": "../../gulp/node_modules/"
+  }
+}

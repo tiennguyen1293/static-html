@@ -1,0 +1,144 @@
+// ==========================================================================
+// Breakpoints
+// ==========================================================================
+
+
+$tiny:                       480px;
+$xsmall:                     640px;
+$small:                      768px;
+$medium:                     960px;
+$regular:                    1024px;
+$large:                      1280px;
+$xlarge:                     1440px;
+$xxlarge:                    1550px;
+$huge:                       1650px;
+
+
+
+
+// ==========================================================================
+// Paths
+// ==========================================================================
+
+$asset-base-path: '../<%= assetsDir %>';
+$asset-images-path: '<%= imgDir %>';
+$asset-fonts-path: '<%= fontDir %>';
+
+
+
+
+
+// ==========================================================================
+// Colors
+// ==========================================================================
+$text:                      #4a4a4a;
+$white:                     #fff;
+$black:                     #0c0c0c;
+$l-black:                   #4d4d4d;
+$green:                     #00ad76;
+$l-green:                   #23ce6b;
+$l-green-1:                 #13c770;
+$d-green:                   #047b1d;
+$blue:                      #0076ff;
+$gray:                      #f2f3f5;
+$l-gray:                    #afafb1;
+$d-gray:                    #5d5f5d;
+$status-draft:              #d8d8d8;
+$status-signed:             #00ad76;
+$status-awaiting:           #f5c06c;
+$status-approved:           #00b3dc;
+$status-warning:            #d8232a;
+$d-yellow:                  #f6a623;
+$d-red:                     #ff0220;
+$red:                       #ff0320;
+$dark-red:                  #a50013;
+
+// ==========================================================================
+// Fonts
+// ==========================================================================
+
+$default-font-family:        'Roboto Condensed', sans-serif;
+$title-font-family:          $default-font-family;
+$serif-font-family:          serif;
+$monospace-font-family:      monospace;
+$fontSmooth:                 true;
+
+
+$default-font-color:         $text;
+$anchor-text-color:          $md-blue-a700;
+$anchor-text-hover-color:    darken($anchor-text-color, 10);
+$anchor-text-decoration:     none;
+
+
+$default-font-size:          14px;
+$default-line-height:        1.4;
+$small-font-siz:             75%;
+
+$nav-list-style:             none;
+
+
+// ==========================================================================
+// Root
+// ==========================================================================
+
+$root-background-color:      #fff;
+$root-color:                 $default-font-color;
+$root-box-sizing:            border-box;
+$root-cursor:                default;
+$root-font-size:             100%;
+$root-line-height:           1.4;
+$root-font-family:           $default-font-family;
+
+
+
+
+// ==========================================================================
+// Animations
+// ==========================================================================
+
+$base-transition:            all .3s ease-out;
+
+
+
+// ==========================================================================
+// Forms
+// ==========================================================================
+
+$form-element-background-color: transparent;
+$form-element-min-height: 1.5em;
+
+// ==========================================================================
+// Tables
+// ==========================================================================
+
+$table-border-collapse: collapse;
+$table-border-spacing: 0;
+$textarea-resize: vertical;
+
+// ==========================================================================
+// Selection
+// ==========================================================================
+$selection-background-color: $md-blue-300;
+$selection-color: #fff;
+$selection-text-shadow: none;
+
+
+
+$media-element-vertical-align: middle;
+
+
+// ==========================================================================
+// Body and HTML
+// ==========================================================================
+
+// Font option: font-family: 'Roboto Condensed', sans-serif;
+// Font option: font-family: 'Roboto', sans-serif;
+
+body, html {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: $text;
+    background-color: #fff;
+}
+

@@ -1,0 +1,84 @@
+{
+  "projectURL": "mynewawesomeapp.localhost",
+  "browsersync": {
+    "server": "../dist"
+  },
+  "postcss": {
+    "src": "../dist/assets/styles/style.css",
+    "build": "../dist/assets/styles/"
+  },
+  "images": {
+    "src": "../src/img/**/*",
+    "build": "../dist/assets/img/"
+  },
+  "html": {
+    "src": "../dist/**/*.html",
+    "build": "../dist/"
+  },
+  "pug": {
+    "src": "../src/pug/*.pug",
+    "watch": "../src/pug/**/*.pug",
+    "build": "../dist/"
+  },
+  "json": {
+    "src": "../src/data/*.json"
+  },
+  "iconFont": {
+    "name": "robonky-glyphs",
+    "types": [
+      "ttf",
+      "eot",
+      "woff",
+      "woff2",
+      "svg"
+    ],
+    "src": "../src/iconfont/svg/**/*.svg",
+    "build": "../dist/assets/fonts/",
+    "templateInput": "../src/iconfont/template/_icons.scss",
+    "templateOutput": "../../../../src/scss/modules/_icons.scss",
+    "templateFontpath": "../fonts/"
+  },
+  "tasks": {
+    "main": [
+      "html",
+      "images",
+      "scripts",
+      "styles"
+    ],
+    "default": [
+      "main",
+      "watch",
+      "browser-sync"
+    ],
+    "build": [
+      "main",
+      "html-build",
+      "scripts-build",
+      "styles-build",
+      "removeDevFiles",
+      "iconfont",
+      "svg"
+    ]
+  },
+  "styles": {
+    "src": "../src/scss/style.scss",
+    "src_files": "../src/scss/**/*.scss",
+    "build_srcsmap": "../dist/assets/styles/",
+    "build": "../dist/assets/styles/",
+    "src_lib": "../dist/assets/styles/**/*.css",
+    "build_lib": "../dist/assets/styles/"
+  },
+  "prefix": "prfx-",
+  "browsers": "last 3 versions, > 1%",
+  "scripts": {
+    "src": "../src/js/**/*.js",
+    "build": "../dist/assets/js",
+    "src_lib": "../dist/assets/js/lib/**/*.js",
+    "build_lib": "../dist/assets/js/lib/"
+  },
+  "svgicons": {
+    "spriteName": "icon-sprite",
+    "src": "../src/icons/icon-sprite/**/*.svg",
+    "build": "../dist/assets/img/svg/"
+  }
+}
